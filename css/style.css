@@ -1,0 +1,616 @@
+/* Importing Roboto font family with weights 300,400,500 and 700 from google font api */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* Defining color variables which would be used through out this document */
+:root {
+  --blue: #3167eb;
+  --white: #ffffff;
+  --fadedwhite: #ffffffbd;
+  --black: #23292f;
+  --border-color: #d4d0d0;
+  --text-color: #4b5156;
+  --faded-text: #808080;
+  --filled-star: #ffa500;
+  --empty-star: #cccccc;
+  --light-background: #f8f9fa;
+  --social: #474545;
+}
+
+/* Removing outline propert from all the elements */
+* {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Setting container fuild default padding to none */
+.container-fluid {
+  padding: 0;
+}
+
+/* Overridding body tag with margin and padding eqaul to 0 and constant font family roboto through out the document  */
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: Roboto;
+}
+
+/* Defining a style to contain and keep document components at certain distance from side bezels  */
+.wrapper {
+  margin: 0 50px;
+}
+
+/* Styles for Primary Navigation (Top One) */
+
+/* Setting background color blue for primary nav */
+.primary-nav {
+  background-color: var(--blue);
+}
+
+/* Setting the color of anchor tags in primary nav to faded white */
+.primary-nav .nav-item .nav-link {
+  color: var(--fadedwhite);
+}
+
+/* Changing primary nav achor tag color to white on hovering */
+.primary-nav .nav-item .nav-link:hover {
+  color: var(--white);
+}
+
+/* Setting focus effect on primary nav anchor tag */
+.primary-nav .nav-item .nav-link:focus {
+  color: var(--white);
+}
+
+/* Aligning primary nav language tab dropdown to little left */
+.primary-nav .dropdown-menu {
+  left: -40px;
+}
+
+/* Setting on focus background color for primary nav dropdown */
+.primary-nav .dropdown-menu .dropdown-item:focus {
+  background-color: var(--blue);
+}
+
+/* Styling primary nav burger icon  */
+.primary-nav .navbar-toggler {
+  color: var(--white);
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+  font-size: 20px;
+}
+
+/* Styles for Secondary Nav */
+
+/* Setting top and bottom margin for 2nd nav */
+.secondary-nav {
+  margin: 10px 0 5px 0;
+}
+
+/* Setting right padding for logo text */
+.logo-text {
+  padding-right: 10px;
+}
+
+/* Upper Logo text styling */
+.logo-text-one {
+  color: #bbbbbb;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+/* lower logo text styling */
+.logo-text-two {
+  color: var(--blue);
+  font-weight: 700;
+  margin-top: -5px;
+}
+
+/* Seeting height and marign top for logo */
+.nav-logo img {
+  height: 70px;
+  margin-top: -5px;
+}
+
+/* Setting marign and width for search bar  */
+.search-box {
+  margin: 10px 0;
+  width: 100%;
+}
+
+/* Seeting width for search bar container */
+.search-field-wrapper {
+  width: 95%;
+}
+
+/* Search bar input field styling */
+.search-field {
+  text-align: left;
+  margin-left: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px 0 0 5px;
+  width: 100%;
+}
+
+/* Removing the deafault box shadow propert of bootstrap fom input field  */
+.search-field:focus {
+  box-shadow: none;
+}
+
+/* Styling search button backgrounf, border and color */
+.search-btn {
+  background-color: var(--blue);
+  border-radius: 0 5px 5px 0;
+  color: var(--white);
+}
+
+/* Style for on focus behaviour of seach button  */
+.search-btn:focus {
+  box-shadow: none;
+  color: var(--white);
+}
+
+/* Style for on hover behaviour of seach button */
+.search-btn:hover {
+  box-shadow: none;
+  color: var(--white);
+}
+
+/* Setting margin top and bottom, content placement for cart,profile,sign in and register section */
+.user-section {
+  margin: 10px 0;
+  justify-content: flex-end;
+}
+
+/* Styling for card and profile buttons */
+.user-btn {
+  background-color: var(--white);
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  color: var(--faded-text);
+}
+
+/* On focus behaviour of cart and profile button */
+.user-btn:focus {
+  background-color: var(--white);
+  color: var(--faded-text);
+  box-shadow: none;
+  outline: none;
+}
+
+/* On hover behaviour of cart and profile button */
+.user-btn:hover {
+  background-color: var(--white);
+  color: var(--faded-text);
+  box-shadow: none;
+  outline: none;
+}
+
+/* Styling padding for User profile button  */
+.user {
+  padding: 6.5px 12.5px;
+}
+
+/* Styling padding for Cart button */
+.cart {
+  padding: 6.5px 11.5px;
+}
+
+/* Setting marign left and right for cart,profile,sign in and register section  */
+.user-section-items {
+  margin: 0 5px;
+}
+
+/* Style for welcome text on 2nd nav  */
+.user-welcome-text {
+  font-weight: 400;
+  color: var(--faded-text);
+}
+
+/* Style for user login options on 2nd nav */
+.user-login-option {
+  font-weight: 500;
+  margin-top: -8px;
+  color: var(--faded-text);
+}
+
+/* Style for 2nd nav anchor tag in used section */
+.user-login-option a {
+  color: var(--faded-text);
+  text-decoration: none;
+}
+
+/* Styles for Category Bar */
+
+/* Setting background color, top and bottom border for Category bar  */
+.category-bar {
+  background-color: var(--white);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* placing the content of category bar at the start */
+.category-bar > .container-fluid {
+  justify-content: flex-start;
+}
+
+/* Style for making toggle option visible */
+.category-bar .navbar-toggler {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for cateory text */
+.category-head {
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+/* categories anchor tag styling */
+.category-bar .nav-link {
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+/* Styles for Banner */
+
+/* Setting margin for banner container */
+.banner-box {
+  margin: 20px 0 -60px 0;
+}
+
+/* Styling banner */
+.banner {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(
+    to right,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  border-radius: 10px;
+}
+
+/* Style for banner text content */
+.banner-content {
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  top: -210px;
+  color: var(--white);
+}
+
+/* Styles for Services  */
+
+/* Style for  service info section  */
+.service-info {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* Setting padding for service info items */
+.service-info-items {
+  padding: 15px;
+}
+
+/* Style for service items icon  */
+.sevice-icon i {
+  font-size: 32px;
+  color: var(--blue);
+}
+
+/* Style for service items heading */
+.service-head {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 0;
+}
+
+/* Style for service item text content */
+.service-content {
+  font-size: 16px;
+  color: var(--text-color);
+  text-align: left;
+}
+
+/* Styles for product Cards catalogue */
+
+/* Setting catalogue margin to none */
+.catalogue {
+  margin: 0;
+}
+
+/* Style for catalogue heading */
+.catalogue-head {
+  font-weight: 700;
+  font-size: 27px;
+  padding: 20px 0 10px 0;
+}
+
+/* Style for catalogue product cards  */
+.catalogue-item {
+  border: 1px solid var(--border-color);
+  padding: 18px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+/* Style for product card image */
+.catalogue-item-img img {
+  width: 100%;
+}
+
+/* Style for stars rating */
+.fa-star {
+  color: var(--filled-star);
+}
+
+/* Style for empty star rating */
+.fa-star-o {
+  color: var(--empty-star);
+}
+
+/* Product price style */
+.catalogue-item-price {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Review text style */
+.catalogue-item-info span {
+  font-size: 16px;
+  color: var(--faded-text);
+}
+
+/* Recommended section style */
+.catelogue-recommended {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Aligning See all button to right */
+.margin-left {
+  margin-left: auto;
+}
+
+/* Style for see all button */
+.see-all-button {
+  border-radius: 5px;
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+/* Style for brands container */
+.brand-container {
+  background-color: var(--light-background);
+  margin: 35px 0;
+}
+
+/* Setting padding for brand cards container */
+.brand-box {
+  padding: 20px 0 40px 0;
+}
+
+/* Style for brand section heading */
+.brand-head {
+  font-weight: 700;
+  font-size: 27px;
+  padding: 20px 0 10px 0;
+}
+
+/* Setting margin top for brand image */
+.brand-img {
+  margin-top: 15px;
+}
+
+/* Style for brand cards */
+.brand-border {
+  background-color: var(--white);
+  padding: 10px 20px;
+  border: 1px solid var(--border-color);
+  max-width: 100%;
+  margin: 15px 0;
+}
+
+/* Seeting brand card marign */
+.brand-content {
+  margin: auto;
+}
+
+/* Brand cards image and content divider style  */
+.divider {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for brands card text */
+.brand-text {
+  margin: 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--faded-text);
+}
+
+/* Style for download section */
+.download-head {
+  font-weight: 700;
+  font-size: 27px;
+  padding: 10px 0 10px 0;
+}
+
+/* Downnload options container style */
+.download-options {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0 30px 0;
+}
+
+/* padding for download buttons */
+.download-button {
+  padding: 10px 10px 10px 0;
+}
+
+/* Styling button layout */
+.button-bg {
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+/* Removing text decoration from anchor tag */
+.download-button a {
+  text-decoration: none;
+}
+
+/* download button icon style */
+.download-icon {
+  font-size: 25px;
+  padding: 2px 5px 2px 7px;
+}
+
+/* button upper text */
+.download-text {
+  font-size: 12px;
+  padding: 2px 5px 2px 7px;
+}
+
+/* button lower text */
+.download-place {
+  font-size: 18px;
+  margin-top: -10px;
+  padding: 2px 5px 2px 7px;
+}
+
+/* Styles for footer section */
+
+/* Seeting background color and padding for footer */
+footer {
+  background-color: var(--light-background);
+  padding: 50px 0 20px 0;
+}
+
+/* Styling footer list heading */
+.footer-link-head {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Style for footer list */
+.footer-link ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Style for footer list items */
+.footer-link ul li {
+  list-style: none;
+  padding: 3px 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Styling list items anchor tag */
+.footer-link ul li a {
+  text-decoration: none;
+  color: var(--faded-text);
+}
+
+/* Social icons style */
+.footer-link .fa {
+  padding: 0 5px;
+  color: var(--social);
+}
+
+/* Footer bottom info style */
+.footer-info {
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--faded-text);
+}
+
+/* Credit cards font size */
+.cards i {
+  font-size: 20px;
+}
+
+/* Media Queries */
+
+/* Modifying few of the style at screen width 500px */
+@media screen and (max-width: 500px) {
+  /* Reducing wrapper margin */
+  .wrapper {
+    margin: 0 10px;
+  }
+
+  /* Changing the flex direction of secondary nav */
+  .secondary-nav {
+    flex-direction: column;
+  }
+
+  /* Changing download buttons marign */
+  .download-button {
+    margin: auto;
+  }
+
+  /* Reducing banner height */
+  .banner {
+    height: 200px;
+  }
+
+  /* Redcing the negative margin of banner text*/
+  .banner-content {
+    top: -150px;
+  }
+}
+
+/* Modifying few of the style at screen width 500px */
+@media screen and (max-width: 768px) {
+  /* Placing the user section at the start in new line */
+  .user-section {
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+
+  /* Setting left marign for user section items */
+  .user-section-items {
+    margin: 0 10px 0 0;
+  }
+
+  /* Setting input type search field margin to none */
+  .search-field {
+    margin: 0;
+  }
+
+  /* Reducing banner height */
+  .banner {
+    height: 250px;
+  }
+
+  /* Redcing the negative margin of banner text*/
+  .banner-content {
+    top: -180px;
+  }
+}
