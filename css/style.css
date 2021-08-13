@@ -1,6 +1,9 @@
 /* Importing Roboto font family with weights 300,400,500 and 700 from google font api */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
+/* Importing Barlow Condensed font family with weight 500 from google font api */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+
 /* Defining color variables which would be used through out this document */
 :root {
   --blue: #3167eb;
@@ -11,7 +14,8 @@
   --text-color: #4b5156;
   --faded-text: #808080;
   --filled-star: #ffa500;
-  --empty-star: #cccccc;
+  --empty-star: #5a5656;
+  --empty-star-fill:#bbbbbb;
   --light-background: #f8f9fa;
   --social: #474545;
 }
@@ -259,7 +263,8 @@ body {
 
 /* Setting margin for banner container */
 .banner-box {
-  margin: 20px 0 -60px 0;
+  margin: 20px 0 40px 0;
+  position: relative;
 }
 
 /* Styling banner */
@@ -286,11 +291,23 @@ body {
 
 /* Style for banner text content */
 .banner-content {
-  padding: 5px;
   text-align: center;
-  position: relative;
-  top: -210px;
+  padding: 5px;
+  position: absolute;
+  top: 70px;
   color: var(--white);
+  width: 100%;
+}
+
+/* Banner heading styles */
+.banner-content .banner-heading{
+  font-size: 50px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* Banner small text style */
+.banner-content .banner-text{
+  font-size: 20px;
 }
 
 /* Styles for Services  */
@@ -329,6 +346,11 @@ body {
   text-align: left;
 }
 
+/* Rotating services section first card truck icon  */
+.fa-truck{
+  transform: rotateY(180deg);
+}
+
 /* Styles for product Cards catalogue */
 
 /* Setting catalogue margin to none */
@@ -362,8 +384,8 @@ body {
 }
 
 /* Style for empty star rating */
-.fa-star-o {
-  color: var(--empty-star);
+.empty-star{
+  color: var(--empty-star-fill);
 }
 
 /* Product price style */
@@ -415,7 +437,7 @@ body {
 .brand-head {
   font-weight: 700;
   font-size: 27px;
-  padding: 20px 0 10px 0;
+  padding: 15px 0 5px 0;
 }
 
 /* Setting margin top for brand image */
@@ -468,7 +490,7 @@ body {
 
 /* padding for download buttons */
 .download-button {
-  padding: 10px 10px 10px 0;
+  padding: 10px 5px 10px 0;
 }
 
 /* Styling button layout */
@@ -582,7 +604,7 @@ footer {
 
   /* Redcing the negative margin of banner text*/
   .banner-content {
-    top: -150px;
+    top: 60px;
   }
 }
 
@@ -611,6 +633,6 @@ footer {
 
   /* Redcing the negative margin of banner text*/
   .banner-content {
-    top: -180px;
+    top: 60px;
   }
 }

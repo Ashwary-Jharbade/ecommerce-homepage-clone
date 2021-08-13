@@ -1,0 +1,26 @@
+<div class="col-lg-3 col-md-6">
+  <div class="catalogue-item">
+    <!-- Image block -->
+    <div class="catalogue-item-img">
+      <img
+        class="img-fluid"
+        src="./img/jacket.PNG"
+        alt="clothing"
+      />
+    </div>
+    <!-- Product Description -->
+    <div class="catalogue-item-name">Just another product name</div>
+    <!-- Review Stars -->
+    <div class="catalogue-item-info">
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star empty-star"></i>
+    <!-- Total reviews -->
+      <span>34 reviews</span>
+    </div>
+    <!-- Product Price -->
+    <div class="catalogue-item-price">$179.00</div>
+  </div>
+</div>
